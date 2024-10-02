@@ -16,18 +16,19 @@
 </head>
 
 <body>
+    <!-- Nav bar -->
     <nav class="navbar">
-      <h1>FitZen</h1>
-      <ul id="nav-links">
-        <li><a href="./exercises/exercises.html">Exercise</a></li>
-        <li><a href="./yoga/yoga.html">Yoga</a></li>
-        <li><a href="#">Meditation</a></li>
-      </ul>
-      <div class="menu-toggle" id="mobile-menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <h1>FitZen</h1>
+        <ul id="nav-links">
+            <li><a href="./exercises/exercises.html">Exercise</a></li>
+            <li><a href="./yoga/yoga.html">Yoga</a></li>
+            <li><a href="#">Meditation</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
     <!-- Hero image section -->
@@ -128,6 +129,64 @@
         </div>
     </div>
 
+    <!-- experts -->
+    <div class="section experts-section">
+        <h1 class="experts-title">Meet Our Experts 🏋️‍♂️</h1>
+        <div class="experts-container" id="experts"></div>
+    </div>
+
+    <!-- packages -->
+    <div class="section packages">
+        <h1 class="packages-title">Wellness Packages 💼</h1>
+        <table class="packages-table">
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Package Name</th>
+                    <th>Included Services</th>
+                    <th>Trainers Involved</th>
+                    <th>Type</th>
+                    <th>Cost</th>
+                    <th>Duration</th>
+                    <th>Join Now</th>
+                </tr>
+            </thead>
+            <tbody id="packages"></tbody>
+        </table>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="section testimonials-section">
+        <h2 class="testimonials-title">What Our Clients Say 😊</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p>🌟 "The best fitness trainers I have ever worked with. I feel more energetic and healthy!"</p>
+                <span>- Aditi, 28</span>
+            </div>
+            <div class="testimonial-card">
+                <p>🌟 "The personalized diet plan has completely changed my lifestyle for the better!"</p>
+                <span>- Rohan, 35</span>
+            </div>
+            <div class="testimonial-card">
+                <p>🌟 "Yoga sessions are very relaxing and well-guided, I highly recommend them!"</p>
+                <span>- Priya, 45</span>
+            </div>
+            <div class="testimonial-card">
+                <p>🌟 "Great variety of workout plans. The live sessions were especially motivating!"</p>
+                <span>- Vikram, 30</span>
+            </div>
+            <div class="testimonial-card">
+                <p>🌟 "I love the flexibility of recorded sessions, fits my schedule perfectly."</p>
+                <span>- Tanya, 23</span>
+            </div>
+            <div class="testimonial-card">
+                <p>🌟 "The expert guidance in yoga and fitness has really helped me transform myself."</p>
+                <span>- Manish, 40</span>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -180,56 +239,11 @@
         </ul>
     </div>
 
-    <script>
-        const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const closeMenuBtn = document.getElementById("close-menu");
-
-        mobileMenuToggle.addEventListener("click", () => {
-            mobileMenu.classList.add("show");
-        });
-
-        closeMenuBtn.addEventListener("click", () => {
-            mobileMenu.classList.remove("show");
-        });
-    </script>
-
-    <script>
-        // Load the YouTube IFrame Player API code asynchronously
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        var player;
-
-        // Create YouTube player
-        function onYouTubeIframeAPIReady() {
-            player = new YT.Player('player', {
-                videoId: 'sG6CX3XbFGo', // Replace with your video ID
-                playerVars: {
-                    'autoplay': 1,
-                    'controls': 0,
-                    'mute': 1,
-                    'loop': 1,
-                    'playlist': 'sG6CX3XbFGo', // Loop the same video
-                    'modestbranding': 1,
-                    'rel': 0,
-                    'showinfo': 0,
-                },
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-        }
-
-        // Ensure video plays at the highest quality available
-        function onPlayerReady(event) {
-            var playbackQuality = 'hd1080'; // Set quality to 1080p
-            event.target.setPlaybackQuality(playbackQuality);
-            event.target.playVideo();  // Ensure video starts playing
-        }
-    </script>
+    <script src="./js/packages.js"></script>
+    <script src="./js/experts.js"></script>
+    <script src="./js/ytvideo.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/testimonials.js"></script>
 </body>
 
 </html>
