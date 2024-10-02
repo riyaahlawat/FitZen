@@ -1,139 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitZen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="./style-home.css" />
     <link rel="stylesheet" href="./style-nav-footer.css">
-  </head>
-  <body>
+</head>
+
+<body>
+    <!-- Nav bar -->
     <nav class="navbar">
-      <h1>FitZen</h1>
-      <ul id="nav-links">
-        <li><a href="./exercises/exercises.html">Exercise</a></li>
-        <li><a href="./yoga/yoga.html">Yoga</a></li>
-        <li><a href="#">Meditation</a></li>
-      </ul>
-      <div class="menu-toggle" id="mobile-menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <h1>FitZen</h1>
+        <ul id="nav-links">
+            <li><a href="./exercises/exercises.html">Exercise</a></li>
+            <li><a href="./yoga/yoga.html">Yoga</a></li>
+            <li><a href="#">Meditation</a></li>
+            <li><a href="#">Diet</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
+    <!-- Hero image section -->
+    <section class="hero-image">
+        <div class="overlay">
+            <h1 class="bordered-text">Fitness Comes in All Shapes, Sizes, and Ages</h1>
+            <h3 class="bordered-text">Explore personalized plans, exercises for every body, and connect with fitness
+                partners.</h3>
+        </div>
+    </section>
+
+    <!-- Video container -->
+    <div class="video-container">
+        <div id="player"></div>
+    </div>
+
     <!-- Banner Section -->
-    <div class="banner">
+    <!-- <div class="banner">
       <div class="banner-text">
         FitZen
         <p>The fitness that fits you</p>
       </div>
-    </div>
+    </div> -->
 
     <!-- About Us Section -->
     <div class="section" id="about">
-      <h2>About FitZen</h2>
-      <p>
-        At FitZen, we believe that fitness is a holistic experience that
-        combines physical strength and mental well-being. Our platform offers a
-        range of exercises, yoga sessions, and meditation practices to help you
-        find balance and achieve your fitness goals. Whether you're a beginner
-        or a fitness enthusiast, FitZen is designed to guide you every step of
-        the way.
-      </p>
+        <h2>About FitZen :)</h2>
+        <p>
+            At FitZen, we believe that fitness is a holistic experience that comes in all shapes, sizes, and ages. Our
+            platform offers a range of exercises, yoga sessions, and meditation practices designed to promote both
+            physical strength and mental well-being. Whether you're a beginner or a fitness enthusiast, FitZen is here
+            to guide you every step of the way, helping you find balance and achieve your fitness goals.
+        </p>
     </div>
 
     <!-- Features Section: Exercise, Yoga, Meditation -->
-    <div class="section" id="features">
-      <h2>Our Features</h2>
-      <div class="features">
-        <div class="feature-box feature-box-1">
-          <h3>Exercises</h3>
-          <!-- <p>Explore a variety of exercises designed to improve your strength, flexibility, and endurance. Whether you're at home or in the gym, FitZen has routines to fit your lifestyle.</p> -->
+    <div class=section style="border-bottom: none;">
+        <h2>Features Offered !!</h2>
+
+        <div class="section features">
+            <div class="feature-card">
+                <h3>Exercises</h3>
+                <img src="./assets/exercise.jpg" height="200">
+                <p>(Home, Gym, Outdoor)</p>
+            </div>
+            <div class="feature-card">
+                <h3>Yoga</h3>
+                <img src="./assets/yoga.webp" height="200">
+                <p>(Relaxation, Power Yoga)</p>
+            </div>
+            <div class="feature-card">
+                <h3>Meditation</h3>
+                <img src="./assets/meditation.webp" height="200">
+                <p>(Read, Practice)</p>
+            </div>
+            <div class="feature-card">
+                <h3>Diet</h3>
+                <img src="./assets/food.jpg" height="200">
+                <p>(Nutrients, Supplements)</p>
+            </div>
+            <div class="feature-card">
+                <h3>Products</h3>
+                <img src="./assets/gadgets.webp" height="200">
+                <p>(Gadgets, Applications)</p>
+            </div>
+            <div class="feature-card">
+                <h3>Find & Connect</h3>
+                <img src="./assets/connect.jpeg" height="200">
+                <p>(Active Areas, Discord Server)</p>
+            </div>
         </div>
-        <div class="feature-box feature-box-2">
-          <h3>Yoga</h3>
-          <!-- <p>Find your inner peace with our yoga sessions that cater to all levels. Yoga is the perfect way to stretch your body, reduce stress, and enhance mindfulness.</p> -->
+    </div>
+
+    <!-- Find and Connect -->
+    <div class="section find-and-connect">
+        <h2>Find and Connect 🌍</h2>
+        <div class="flex-container">
+            <!-- Find Nearby -->
+            <div class="find-nearby">
+                <h3>Find Gyms, Parks, and Sports Centers Nearby!</h3>
+                <div class="map-container">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509132!2d144.95373531531615!3d-37.816279979751784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f1a1f47%3A0x5045675218ceed30!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1615862231234!5m2!1sen!2sau"
+                            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Discord Server -->
+            <div class="discord-container">
+                <h3>Connect with Like-Minded Health Freaks!</h3>
+                <p style="text-align: justify;">Join our Discord community to connect with fellow fitness enthusiasts,
+                    share
+                    tips, organize group workouts, and stay motivated on your fitness journey!</p>
+                <a class="cta-button" href="#">Join Our Discord Community</a>
+            </div>
         </div>
-        <div class="feature-box feature-box-3">
-          <h3>Meditation</h3>
-          <!-- <p>Relax and rejuvenate with guided meditation practices that help you clear your mind, reduce anxiety, and focus on mental clarity.</p> -->
+    </div>
+
+    <!-- experts -->
+    <div class="section experts-section">
+        <h1 class="experts-title">Meet Our Experts 🏋️‍♂️</h1>
+        <div class="experts-container" id="experts"></div>
+    </div>
+
+    <!-- packages -->
+    <div class="section packages">
+        <h1 class="packages-title">Wellness Packages 💼</h1>
+        <table class="packages-table">
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Package Name</th>
+                    <th>Included Services</th>
+                    <th>Trainers Involved</th>
+                    <th>Type</th>
+                    <th>Cost</th>
+                    <th>Duration</th>
+                    <th>Join Now</th>
+                </tr>
+            </thead>
+            <tbody id="packages"></tbody>
+        </table>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="section testimonials-section">
+        <h2 class="testimonials-title">What Our Clients Say 😊</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p>🌟 "The best fitness trainers I have ever worked with. I feel more energetic and healthy!"</p>
+                <span>- Aditi, 28</span>
+            </div>
+            <div class="testimonial-card">
+                <p>🌟 "The personalized diet plan has completely changed my lifestyle for the better!"</p>
+                <span>- Rohan, 35</span>
+            </div>
+            <div class="testimonial-card">
+                <p>🌟 "Yoga sessions are very relaxing and well-guided, I highly recommend them!"</p>
+                <span>- Priya, 45</span>
+            </div>
+            <div class="testimonial-card">
+                <p>🌟 "Great variety of workout plans. The live sessions were especially motivating!"</p>
+                <span>- Vikram, 30</span>
+            </div>
+            <div class="testimonial-card">
+                <p>🌟 "I love the flexibility of recorded sessions, fits my schedule perfectly."</p>
+                <span>- Tanya, 23</span>
+            </div>
+            <div class="testimonial-card">
+                <p>🌟 "The expert guidance in yoga and fitness has really helped me transform myself."</p>
+                <span>- Manish, 40</span>
+            </div>
         </div>
-      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="section faq-section" id="faq">
+        <h2>FAQs ❓</h2>
+
+        <div class="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    What kind of fitness plans does FitZen offer?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>FitZen offers a variety of personalized fitness plans, including home workouts, gym-based plans,
+                        and outdoor exercises, to cater to all levels of fitness. Whether you're a beginner or a
+                        seasoned athlete, we have something for everyone!</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Are the yoga and meditation sessions suitable for beginners?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, our yoga and meditation sessions are designed for all levels, from beginners to advanced
+                        practitioners. You can start with the basics and gradually progress at your own pace.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I join the FitZen community on Discord?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>To join our Discord community, simply click on the 'Join Our Discord Community' button in the
+                        "Find and Connect" section above. You'll be able to meet fellow fitness enthusiasts and join
+                        group workout sessions.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do I need to purchase any equipment for the workouts?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>While some workouts may require basic equipment like dumbbells or resistance bands, we also offer
+                        a wide range of equipment-free exercises that can be done anywhere.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I try a fitness plan before committing to it?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolutely! We offer a trial period for all our fitness plans, so you can experience the benefits
+                        of FitZen before making a full commitment.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer Section -->
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-about">
-          <h3>FitZen</h3>
-          <p>
-            Your journey to fitness, balance, and mindfulness begins here. Join
-            us for workouts, yoga, and meditation sessions designed to help you
-            achieve your wellness goals.
-          </p>
-        </div>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>FitZen</h3>
+                <p>
+                    Your journey to fitness, balance, and mindfulness begins here. Join
+                    us for workouts, yoga, and meditation sessions designed to help you
+                    achieve your wellness goals.
+                </p>
+            </div>
 
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Exercise</a></li>
+                    <li><a href="#">Yoga</a></li>
+                    <li><a href="#">Meditation</a></li>
+                    <li><a href="#">Diet</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-email">
+                    <h4>Email Us</h4>
+                    <p><a href="mailto:info@fitzen.com">info@fitzen.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FitZen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Responsive Nav bar -->
+    <div class="mobile-menu" id="mobile-menu">
+        <span class="close-btn" id="close-menu">&times;</span>
+        <ul>
             <li><a href="#">Exercise</a></li>
             <li><a href="#">Yoga</a></li>
             <li><a href="#">Meditation</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-social">
-          <h4>Follow Us</h4>
-          <div class="social-icons">
-            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-          <div class="footer-email">
-            <h4>Email Us</h4>
-            <p><a href="mailto:info@fitzen.com">info@fitzen.com</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 FitZen. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <div class="mobile-menu" id="mobile-menu">
-      <span class="close-btn" id="close-menu">&times;</span>
-      <ul>
-        <li><a href="#">Exercise</a></li>
-        <li><a href="#">Yoga</a></li>
-        <li><a href="#">Meditation</a></li>
-      </ul>
+            <li><a href="#">Diet</a></li>
+        </ul>
     </div>
 
-    <script>
-      const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
-      const closeMenuBtn = document.getElementById("close-menu");
+    <script src="./js/packages.js"></script>
+    <script src="./js/experts.js"></script>
+    <script src="./js/ytvideo.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/testimonials.js"></script>
+    <script src="./js/faq.js"></script>
+</body>
 
-      mobileMenuToggle.addEventListener("click", () => {
-        mobileMenu.classList.add("show");
-      });
-
-      closeMenuBtn.addEventListener("click", () => {
-        mobileMenu.classList.remove("show");
-      });
-    </script>
-  </body>
 </html>
