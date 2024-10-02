@@ -193,6 +193,7 @@ body {
 
   .roadmap-icon {
     margin-bottom: 1rem;
+    margin-right: 0;
   }
 }
 
@@ -429,4 +430,40 @@ body {
 
 .explore-button:hover {
     background-color: #c0ba3b; /* Darker shade on hover */
+}
+
+.yoga-benefits {
+    padding: 50px 20px; /* Padding around the section */
+    background: #f9f9f9; /* Light background color */
+    text-align: center; /* Center the text */
+}
+
+.yoga-benefits h2 {
+    font-size: 2.5rem; /* Large heading size */
+    color: #004d40; /* Heading color */
+    margin-bottom: 40px; /* Space below heading */
+}
+
+.benefit-grid {
+    display: flex;
+    gap: 5px; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    background-color: white; /* Card background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.benefit-item h3 {
+    margin: 0; /* Remove margin */
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
 }

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Ubuntu", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.morning-yoga {
+  /* background-color: #f9f9f9;  */
+  text-align: center;
+}
+
+.youtube-tutorial {
+  text-align: center; /* Center the tutorial */
+  margin-bottom: 40px; /* Space below the tutorial */
+}
+.surya-namaskar-steps{
+    margin: 40px 20px;
+}
+.steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Space between cards */
+    margin-top: 50px;
+    width: 60vw;
+    margin: auto;
+}
+
+.yoga-card {
+    /* flex: 1 1 calc(33.333% - 20px);  */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 200px;
+}
+
+.yoga-card img {
+    max-width: 100%; /* Ensures images don't exceed card width */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.yoga-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.yoga-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.yoga-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .yoga-card {
+        flex: 1 1 100%; /* Stacks the cards vertically */
+    }
+}
+
+.surya-namaskar-section {
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 40px 20px;
+    padding: 20px;
+}
+
+.start-button {
+    padding: 15px 30px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #59ff47;
+}
+
+.current-step {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.current-step h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.current-step img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.start-button, .stop-button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50; /* Green for start */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.stop-button {
+    background-color: #f44336; /* Red for stop */
+}
+
+.start-button:hover, .stop-button:hover {
+    opacity: 0.8;
+}
