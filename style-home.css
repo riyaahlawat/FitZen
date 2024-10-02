@@ -15,7 +15,7 @@ body {
 .hero-image {
   position: relative;
   height: 100vh;
-  background-image: url('./assets/hero_section.webp'); /* Replace with your image URL */
+  background-image: url("./assets/hero_section.webp"); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
 }
@@ -44,7 +44,7 @@ body {
 
 /* Video Section */
 .video-container {
-  max-width: 800px; 
+  max-width: 800px;
   height: 60vh;
   margin: 20px auto; /* Center the container */
   padding: 20px;
@@ -149,14 +149,17 @@ body {
   margin: 2px;
 }
 
-.feature-card img{
-  object-fit:contain;
+.feature-card img {
+  object-fit: contain;
 }
 
 .section.features {
   padding: 50px 20px; /* Padding around the section */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Responsive columns */
   gap: 20px; /* Space between grid items */
 }
 
@@ -201,7 +204,8 @@ body {
   justify-content: center; /* Space between items */
 }
 
-.find-nearby, .discord-container {
+.find-nearby,
+.discord-container {
   flex: 1; /* Equal space for both containers */
   min-width: 300px; /* Minimum width for responsiveness */
   margin: 10px; /* Margin around each container */
@@ -248,7 +252,7 @@ body {
 .experts-section {
   margin-left: 10%;
   margin-right: 10%;
-  padding: 40px;
+  /* padding: 40px; */
   /* border-radius: 10px; */
   margin-bottom: 40px;
 }
@@ -355,26 +359,26 @@ body {
 /* Responsive styles */
 @media (max-width: 768px) {
   .packages {
-      margin: 0 5%; /* Adjust margins for smaller screens */
+    margin: 0 5%; /* Adjust margins for smaller screens */
   }
 
   .packages-table {
-      font-size: 14px; /* Reduce font size for smaller screens */
-      overflow-x: auto; /* Allow horizontal scrolling */
-      display: block; /* Allow the table to be scrollable */
+    font-size: 14px; /* Reduce font size for smaller screens */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    display: block; /* Allow the table to be scrollable */
   }
 
   .packages-table th,
   .packages-table td {
-      padding: 8px; /* Reduce padding for smaller screens */
+    padding: 8px; /* Reduce padding for smaller screens */
   }
 
   .packages-table th {
-      font-size: 16px; /* Keep header font size consistent */
+    font-size: 16px; /* Keep header font size consistent */
   }
 
   .packages-table td {
-      font-size: 14px; /* Keep cell font size smaller */
+    font-size: 14px; /* Keep cell font size smaller */
   }
 }
 
@@ -415,13 +419,13 @@ body {
 
 .testimonial-card:hover {
   transform: translateY(-5px);
-  box-shadow: 2px 10px 6px rgba(134, 130, 130, 0.8); 
+  box-shadow: 2px 10px 6px rgba(134, 130, 130, 0.8);
 }
 
 /* faq-section */
 .faq-section {
   margin: 0 10%;
-  padding: 2rem;
+  /* padding: 2rem; */
   margin-bottom: 2rem;
 }
 
