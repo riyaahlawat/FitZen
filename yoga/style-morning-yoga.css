@@ -12,12 +12,39 @@ body {
 
 .morning-yoga {
   /* background-color: #f9f9f9;  */
+  margin-top: 30px;
   text-align: center;
 }
 
 .youtube-tutorial {
   text-align: center; /* Center the tutorial */
-  margin-bottom: 40px; /* Space below the tutorial */
+  /* margin-bottom: 40px;  */
+}
+
+.youtube-container {
+    position: relative;
+    height: 40vh;
+    overflow: hidden;
+    max-width: 38%;
+    margin: auto;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+@media screen and (max-width: 768px) {
+    .youtube-container {
+        max-width: 340px;
+    }
+    
+}
+
+.youtube-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    border: none;
 }
 .surya-namaskar-steps{
     margin: 40px 20px;
@@ -71,6 +98,7 @@ body {
     .yoga-card {
         flex: 1 1 100%; /* Stacks the cards vertically */
     }
+    
 }
 
 .surya-namaskar-section {
