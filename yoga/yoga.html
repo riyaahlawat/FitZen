@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitZen - Yoga</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style-yoga-home.css" />
+    <link rel="stylesheet" href="../style-nav-footer.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>FitZen</h1>
+      <ul id="nav-links">
+        <li><a href="./exercises/exercises.html">Exercise</a></li>
+        <li><a href="./yoga.html">Yoga</a></li>
+        <li><a href="#">Meditation</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <!-- Yoga Header Section -->
+    <header class="yoga-header">
+      <h1>Yoga Sessions at FitZen</h1>
+      <p>
+        Find balance and peace with yoga. Choose your level or preferred session
+        type.
+      </p>
+    </header>
+
+    <!-- Yoga Categories Section -->
+    <section class="yoga-categories">
+      <h2>Select Your Yoga Session</h2>
+      <div class="yoga-grid">
+        <a href="#beginner-yoga" class="yoga-card-link">
+          <div class="yoga-card">
+            <img src="./assets/beginner.jpg" alt="Beginner Yoga" />
+            <h3>Beginner Yoga</h3>
+            <p>Start your yoga journey with simple and easy poses.</p>
+          </div>
+        </a>
+        <a href="#intermediate-yoga" class="yoga-card-link">
+          <div class="yoga-card">
+            <img src="./assets/intermediate.jpg" alt="Intermediate Yoga" />
+            <h3>Intermediate Yoga</h3>
+            <p>Challenge yourself with deeper poses and more control.</p>
+          </div>
+        </a>
+        <a href="#advanced-yoga" class="yoga-card-link">
+          <div class="yoga-card">
+            <img src="./assets/advanced.jpg" alt="Advanced Yoga" />
+            <h3>Advanced Yoga</h3>
+            <p>Master advanced techniques and build strength.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="yoga-categories">
+      <!-- <h2>Select Your Yoga Session</h2> -->
+      <div class="yoga-grid">
+        <a href="./beginner-yoga/beginner-yoga.html" class="yoga-card-link">
+          <div class="yoga-card">
+            <img src="./assets/morning.jpg" alt="Morning Yoga" />
+            <h3>Morning Yoga</h3>
+            <p>Wake up your body and mind with gentle morning stretches.</p>
+          </div>
+        </a>
+        <a href="./beginner-yoga/beginner-yoga.html" class="yoga-card-link">
+          <div class="yoga-card">
+            <img src="./assets/evening.jpg" alt="Evening Yoga" />
+            <h3>Evening Yoga</h3>
+            <p>Unwind and relax with calming evening sessions.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="yoga-categories">
+      <!-- <h2>Select Your Yoga Session</h2> -->
+      <div class="yoga-grid">
+        <a href="./beginner-yoga/beginner-yoga.html" class="yoga-card-link">
+          <div class="yoga-card">
+            <img src="./assets/relaxation.webp" alt="Relaxation Yoga" />
+            <h3>Relaxation Yoga</h3>
+            <p>Ease stress and find peace through relaxing poses.</p>
+          </div>
+        </a>
+        <a href="./beginner-yoga/beginner-yoga.html" class="yoga-card-link">
+          <div class="yoga-card">
+            <img src="./assets/power.webp" alt="Power Yoga" />
+            <h3>Power Yoga</h3>
+            <p>Increase strength and flexibility with intense sessions.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="yoga-roadmap">
+      <h2>Your Yoga Journey</h2>
+      <div class="roadmap-container">
+        <!-- Step 1: Beginner Yoga -->
+        <div class="roadmap-step">
+          <div class="roadmap-icon beginner-icon"></div>
+          <div class="roadmap-content">
+            <h3>Stage 1: Beginner Yoga</h3>
+            <p>
+              Start with basic poses, focus on flexibility and breath control.
+              Perfect for building a strong foundation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2: Intermediate Yoga -->
+        <div class="roadmap-step">
+          <div class="roadmap-icon intermediate-icon"></div>
+          <div class="roadmap-content">
+            <h3>Stage 2: Intermediate Yoga</h3>
+            <p>
+              Enhance your flexibility and build endurance with more challenging
+              poses.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3: Advanced Yoga -->
+        <div class="roadmap-step">
+          <div class="roadmap-icon advanced-icon"></div>
+          <div class="roadmap-content">
+            <h3>Stage 3: Advanced Yoga</h3>
+            <p>
+              Master advanced techniques and dive into more intensive,
+              strength-building poses.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 4: Specialized Yoga Sessions -->
+        <div class="roadmap-step">
+          <div class="roadmap-icon specialized-icon"></div>
+          <div class="roadmap-content">
+            <h3>Stage 4: Specialized Yoga Sessions</h3>
+            <p>
+              Explore yoga based on your preferences like Morning, Evening,
+              Power, or Relaxation Yoga to suit your goals.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="yoga-poses" id="beginner-yoga">
+      <h2>Beginner Friendly Yoga Poses</h2>
+      <div class="yoga-poses-container">
+        <!-- Yoga Pose Card with Image and Hindi/English Names -->
+        <div class="yoga-pose-card">
+          <img src="./assets/yoga-poses/1-Balasana.jpg" alt="Balasana" />
+          <div class="yoga-info">
+            <h3>Balasana</h3>
+            <p>Child's Pose</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img
+            src="./assets/yoga-poses/4_bhujangasana.jpg"
+            alt="Bhujangasana"
+          />
+          <div class="yoga-info">
+            <h3>Bhujangasana</h3>
+            <p>Cobra Pose</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img src="./assets/yoga-poses/5-Shavasana.jpg" alt="Shavasana" />
+          <div class="yoga-info">
+            <h3>Shavasana</h3>
+            <p>Corpse Pose</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img
+            src="./assets/yoga-poses/6-mountain-pose.jpeg"
+            alt="Mountain Pose"
+          />
+          <div class="yoga-info">
+            <h3>Tadasana</h3>
+            <p>Mountain Pose</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img
+            src="./assets/yoga-poses/10-extended-traingle.jpg"
+            alt="Extended Side Angle"
+          />
+          <div class="yoga-info">
+            <h3>Utthita Parsvakonasana</h3>
+            <p>Extended Side Angle</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img
+            src="./assets/yoga-poses/11-spinal-rotation.jpg"
+            alt="Spinal Rotation"
+          />
+          <div class="yoga-info">
+            <h3>Ardha Matsyendrasana</h3>
+            <p>Spinal Rotation</p>
+          </div>
+        </div>
+
+        <!-- <div class="yoga-pose-card">
+                <img src="./assets/sukhasana.jpg" alt="Sukhasana" />
+                <div class="yoga-info">
+                  <h3>Sukhasana</h3>
+                  <p>Easy Pose</p>
+                </div>
+              </div>
+            
+              <div class="yoga-pose-card">
+                <img src="./assets/uttanasana.jpg" alt="Uttanasana" />
+                <div class="yoga-info">
+                  <h3>Uttanasana</h3>
+                  <p>Standing Forward Bend</p>
+                </div>
+              </div>
+            
+              <div class="yoga-pose-card">
+                <img src="./assets/low_lunge.jpg" alt="Low Lunge" />
+                <div class="yoga-info">
+                  <h3>Anjaneyasana</h3>
+                  <p>Low Lunge</p>
+                </div>
+              </div>
+            
+              <div class="yoga-pose-card">
+                <img src="./assets/triangle_pose.jpg" alt="Triangle Pose" />
+                <div class="yoga-info">
+                  <h3>Trikonasana</h3>
+                  <p>Triangle Pose</p>
+                </div>
+              </div>
+            
+              <div class="yoga-pose-card">
+                <img src="./assets/reverse_warrior.jpg" alt="Reverse Warrior" />
+                <div class="yoga-info">
+                  <h3>Viparita Virabhadrasana</h3>
+                  <p>Reverse Warrior</p>
+                </div>
+              </div> -->
+
+        <!-- Add the remaining poses similarly... -->
+      </div>
+    </section>
+
+    <!-- Intermediate Yoga Section -->
+    <section class="yoga-poses" id="intermediate-yoga">
+      <h2>Intermediate Yoga Poses</h2>
+      <div class="yoga-poses-container">
+        <!-- Yoga Pose Card with Image and Hindi/English Names -->
+        <div class="yoga-pose-card">
+          <img
+            src="./assets/yoga-poses/2-Adho Mukha Svanasana.jpg"
+            alt="Adho Mukha Svanasana"
+          />
+          <div class="yoga-info">
+            <h3>Adho Mukha Svanasana</h3>
+            <p>Downward Facing Dog</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img src="./assets/yoga-poses/3-bridge-pose.webp" alt="Bridge Pose" />
+          <div class="yoga-info">
+            <h3>Setu Bandhasana</h3>
+            <p>Bridge Pose</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img src="./assets/yoga-poses/12-worrior.png" alt="Warrior II" />
+          <div class="yoga-info">
+            <h3>Virabhadrasana II</h3>
+            <p>Warrior II</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img src="./assets/yoga-poses/7-plank.png" alt="Plank" />
+          <div class="yoga-info">
+            <h3>Kumbhakasana</h3>
+            <p>Plank Pose</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img src="./assets/yoga-poses/8-tree-pose.jpg" alt="Tree Pose" />
+          <div class="yoga-info">
+            <h3>Vrikshasana</h3>
+            <p>Tree Pose</p>
+          </div>
+        </div>
+
+        <!-- Add the remaining poses similarly... -->
+      </div>
+    </section>
+
+    <!-- Advanced Yoga Section -->
+    <section class="yoga-poses" id="advanced-yoga">
+      <h2>Advanced Yoga Poses</h2>
+      <div class="yoga-poses-container">
+        <!-- Yoga Pose Card with Image and Hindi/English Names -->
+        <div class="yoga-pose-card">
+          <img
+            src="./assets/yoga-poses/13-Dhanurasana.jpg.crdownload"
+            alt="Adho Mukha Svanasana"
+          />
+          <div class="yoga-info">
+            <h3>Dhanurasana</h3>
+            <p>Bow Pose</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img
+            src="./assets/yoga-poses/14-Scorpion Handstand.webp"
+            alt="Bridge Pose"
+          />
+          <div class="yoga-info">
+            <h3>Vrschikasana</h3>
+            <p>Scorpion Handstand</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img src="./assets/yoga-poses/15-Crow Pose.jpg" alt="Warrior II" />
+          <div class="yoga-info">
+            <h3>Bakasana</h3>
+            <p>Crow Pose</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img
+            src="./assets/yoga-poses/16-Lotus Pose.jpg.crdownload"
+            alt="Plank"
+          />
+          <div class="yoga-info">
+            <h3>Padmasana</h3>
+            <p>Lotus Pose</p>
+          </div>
+        </div>
+
+        <div class="yoga-pose-card">
+          <img src="./assets/yoga-poses/17-Compass Pose.png" alt="Tree Pose" />
+          <div class="yoga-info">
+            <h3>Surya Yantrasana</h3>
+            <p>Compass Pose</p>
+          </div>
+        </div>
+
+        <!-- Add the remaining poses similarly... -->
+      </div>
+    </section>
+
+    <section class="morning-yoga">
+      <div class="morning-yoga-container">
+        <!-- Left Section with Surya Namaskar Image -->
+        <div class="morning-yoga-image">
+          <img
+            src="./assets/yoga-poses/surya-namaskar.webp"
+            alt="Surya Namaskar"
+          />
+        </div>
+
+        <!-- Right Section with Text -->
+        <div class="morning-yoga-text">
+          <h1>Morning Yoga</h1>
+          <h4>Let the sun energize your yoga practice.</h4>
+          <a href="#more-info" class="explore-button">Explore More</a> <!-- Add this line -->
+          <!-- <h2>Surya Namaskar</h2>
+          <br />
+          <p>12 steps to make your morning refreshing</p> -->
+          <!-- <p>Surya Namaskar, or Sun Salutation, is a sequence of 12 powerful yoga poses. It is a complete workout for the body, mind, and soul. Practicing Surya Namaskar first thing in the morning revitalizes your body, refreshes the mind, and helps you prepare for the challenges of the day.</p>
+            <p>Benefits include:</p>
+            <ul>
+              <li>Improves blood circulation.</li>
+              <li>Boosts the nervous system.</li>
+              <li>Enhances muscle strength and flexibility.</li>
+              <li>Reduces stress and anxiety.</li>
+            </ul> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="evening-yoga">
+      <div class="evening-yoga-container">
+        <!-- Left Section with Heading -->
+        <div class="evening-yoga-text">
+          <h1>Evening Yoga</h1>
+          <h4>Gentle poses that are designed to relax you, and that will help you sleep</h4>
+          <a href="#more-info" class="explore-button">Explore More</a> <!-- Add this line -->
+
+        </div>
+
+        <!-- Right Section with Evening Yoga Image -->
+        <div class="evening-yoga-image">
+          <img src="./assets/yoga-poses/evening-yoga.jpg" alt="Evening Yoga" />
+        </div>
+      </div>
+    </section>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <span class="close-btn" id="close-menu">&times;</span>
+      <ul>
+        <li><a href="#">Exercise</a></li>
+        <li><a href="#">Yoga</a></li>
+        <li><a href="#">Meditation</a></li>
+      </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>FitZen</h3>
+          <p>
+            Your journey to fitness, balance, and mindfulness begins here. Join
+            us for workouts, yoga, and meditation sessions designed to help you
+            achieve your wellness goals.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Exercise</a></li>
+            <li><a href="#">Yoga</a></li>
+            <li><a href="#">Meditation</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="footer-email">
+            <h4>Email Us</h4>
+            <p><a href="mailto:info@fitzen.com">info@fitzen.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 FitZen. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeMenuBtn = document.getElementById("close-menu");
+
+      mobileMenuToggle.addEventListener("click", () => {
+        mobileMenu.classList.add("show");
+      });
+
+      closeMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>

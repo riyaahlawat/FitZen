@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Ubuntu", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Yoga Header Section */
+.yoga-header {
+  text-align: center;
+  background-color: #e0f7fa;
+  color: #004d40;
+  padding: 2rem 0;
+}
+
+.yoga-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.yoga-header p {
+  font-size: 1.2rem;
+}
+
+/* Yoga Categories Grid */
+.yoga-categories {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.yoga-categories h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.yoga-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 1.4rem;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.yoga-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.yoga-card-link {
+  text-decoration: none;
+  color: inherit; /* Make sure text color inside the link doesn't change */
+  display: inline-block; /* Ensures the link expands to fit the div */
+}
+
+/* Style for the Yoga Card */
+.yoga-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Add pointer cursor for clickable effect */
+  max-width: 350px;
+}
+
+.yoga-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.yoga-card h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #004d40;
+}
+
+.yoga-card p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Hover Effect for the Card */
+.yoga-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .yoga-card {
+    width: 100%;
+  }
+}
+
+/* Yoga Roadmap Section */
+.yoga-roadmap {
+  background-color: #f3f4f6;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.yoga-roadmap h2 {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 2rem;
+}
+
+/* Roadmap Container */
+.roadmap-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Roadmap Step */
+.roadmap-step {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 80%;
+}
+
+/* Roadmap Icon */
+.roadmap-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+  font-size: 2rem;
+  color: #004d40;
+}
+
+/* Icon Customization for Each Stage */
+.beginner-icon {
+  background-color: #76c7c0;
+}
+.intermediate-icon {
+  background-color: #42a5f5;
+}
+.advanced-icon {
+  background-color: #ef5350;
+}
+.specialized-icon {
+  background-color: #ffca28;
+}
+
+/* Roadmap Content */
+.roadmap-content h3 {
+  font-size: 1.8rem;
+  color: #004d40;
+  margin-bottom: 0.5rem;
+}
+
+.roadmap-content p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Hover Effects */
+.roadmap-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .roadmap-step {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .roadmap-icon {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Beginner Yoga Section */
+.yoga-poses {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f0f4f8;
+}
+
+.yoga-poses h2 {
+  font-size: 2.5rem;
+  color: #004d40;
+  margin-bottom: 2rem;
+}
+
+/* Yoga Poses Grid */
+.yoga-poses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Yoga Pose Card */
+.yoga-pose-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between image and text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  flex: 1 1 calc(33.333% - 40px); /* 3 cards per row with spacing */
+  max-width: calc(33.333% - 40px);
+}
+
+.yoga-pose-card img {
+  width: 120px; /* Adjust image size */
+  height: 70px;
+  object-fit: contain;
+  /* border-radius: 50%; */
+}
+
+.yoga-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #004d40;
+}
+
+.yoga-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.yoga-pose-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .yoga-pose-card {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row for tablets */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .yoga-pose-card {
+    flex: 1 1 100%; /* 1 card per row for small screens */
+    max-width: 100%;
+  }
+}
+
+/* Morning Yoga Section */
+.morning-yoga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px; */
+  /* background-color: #f4f4f4; */
+}
+
+.morning-yoga-container {
+  display: flex;
+  /* max-width: 1200px; */
+  width: 100%;
+  /* position: relative; */
+}
+
+/* Left Side: Surya Namaskar Image */
+.morning-yoga-image {
+  flex: 0 0 45%;
+  position: relative;
+  width: 40%;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.morning-yoga-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Side: Text Content */
+.morning-yoga-text {
+  flex: 0 0 55%; /* Takes 55% of the space */
+  background-color: white;
+  padding: 30px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  flex-direction: column;
+}
+
+.morning-yoga-text h1 {
+  font-size: 4rem; /* Large font size */
+  color: #004d40;
+  text-align: center;
+  margin: 0; /* Remove default margins */
+}
+
+.morning-yoga-text h2 {
+  font-size: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .morning-yoga-container {
+    flex-direction: column-reverse;
+  }
+
+  .morning-yoga-image {
+    flex: 1;
+    clip-path: none;
+    border-radius: 15px 15px 0 0;
+    width: 100vw;
+  }
+
+  .morning-yoga-text {
+    flex: 1;
+    border-radius: 0 0 15px 15px;
+    margin-top: 20px;
+  }
+
+  .morning-yoga-text h1 {
+    font-size: 3rem; /* Adjust the font size for smaller screens */
+  }
+}
+
+/* Evening Yoga Section */
+.evening-yoga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.evening-yoga-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Left Side: Text Content */
+.evening-yoga-text {
+  flex: 0 0 55%;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  flex-direction: column;
+}
+
+.evening-yoga-text h1 {
+  font-size: 4rem; /* Large font size */
+  color: #004d40;
+  text-align: center;
+  margin: 0; /* Remove default margins */
+}
+
+/* Right Side: Evening Yoga Image */
+.evening-yoga-image {
+  flex: 0 0 45%; 
+  width: 40%;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.evening-yoga-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .evening-yoga-container {
+    flex-direction: column;
+  }
+
+  .evening-yoga-text {
+    flex: 1;
+    margin-bottom: 20px; /* Space between text and image on small screens */
+  }
+
+  .evening-yoga-image {
+    flex: 1;
+    width: 100vw;
+    clip-path: none;
+  }
+
+  .evening-yoga-text h1 {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding */
+    background-color: #d4c867; /* Button background color */
+    color: white; /* Button text color */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.explore-button:hover {
+    background-color: #c0ba3b; /* Darker shade on hover */
+}
