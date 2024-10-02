@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+  font-family: "Ubuntu", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  background-color: #8ac6d1;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Exercise Categories Section */
+.exercise-categories {
+  padding: 2rem;
+  text-align: center;
+}
+
+.exercise-categories h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid for exercise categories */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 1rem;
+}
+
+.category-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.category-card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.category-card h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+}
