@@ -60,51 +60,6 @@ body {
   height: 100%;
 }
 
-/* Banner section styling */
-.banner {
-  width: 100%;
-  height: 80vh;
-  background-image: url(./assets/bg.avif); /* Replace with your image URL */
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fedc7b;
-}
-.banner-text {
-  color: white;
-  font-size: 58px;
-  font-weight: bold;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-  text-align: center;
-}
-
-.banner-text > p {
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  font-style: oblique;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
-}
-
-@media (max-width: 768px) {
-  /* .navbar ul {
-    display: none;
-  }
-  .menu-toggle {
-    display: flex;
-  }
-  .mobile-menu.show {
-    display: flex;
-  } */
-  .banner {
-    background-size: cover;
-  }
-}
-
 /* About and features section styling */
 .section {
   padding: 50px 0px;
