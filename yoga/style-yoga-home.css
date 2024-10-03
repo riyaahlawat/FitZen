@@ -13,9 +13,21 @@ body {
 /* Yoga Header Section */
 .yoga-header {
   text-align: center;
-  background-color: #e0f7fa;
+  background-color: #c8e2ec;
   color: #004d40;
   padding: 2rem 0;
+  background-image: url(./assets/yoga-gif.gif);
+  height: 80vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .yoga-header {
+    height: 60vh;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 90%);
+  }
 }
 
 .yoga-header h1 {
