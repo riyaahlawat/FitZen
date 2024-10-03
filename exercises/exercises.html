@@ -1,44 +1,658 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FitZen - Exercises</title>
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitZen - Exercises</title>
+    <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-  <link rel="stylesheet" href="./style-exercises-home.css">
-</head>
-<body>
-
-  <!-- Header Section -->
-  <header>
-    <h1>Exercise with FitZen</h1>
-    <p>Boost your fitness with these curated exercise programs</p>
-  </header>
-
-  <!-- Exercise Categories Section -->
-  <section class="exercise-categories">
-    <h2>Choose Your Workout</h2>
-    <div class="category-grid">
-      <!-- Example Exercise Card -->
-      <div class="category-card">
-        <img src="images/cardio.jpg" alt="Cardio Workout">
-        <h3>Cardio</h3>
-        <p>Get your heart pumping with cardio exercises.</p>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style-exercises-home.css" />
+    <link rel="stylesheet" href="../style-nav-footer.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <a href="../index.html" style="text-decoration: none">
+        <h1>FitZen</h1>
+      </a>
+      <ul id="nav-links">
+        <li><a href="../exercises/exercises.html">Exercise</a></li>
+        <li><a href="../yoga/yoga.html">Yoga</a></li>
+        <li><a href="../meditation/meditation.html">Meditation</a></li>
+        <li><a href="../diet/diet.html">Diet</a></li>
+        <li><a href="../products/products.html">Products</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="category-card">
-        <img src="images/strength.jpg" alt="Strength Training">
-        <h3>Strength</h3>
-        <p>Build your muscles with strength exercises.</p>
+    </nav>
+
+    <header>
+      <h1>Exercise with FitZen</h1>
+      <p>Boost your fitness with these curated exercise programs</p>
+    </header>
+
+    <!-- Exercise Categories Section -->
+    <section class="exercise-categories">
+      <h2>Choose Your Workout Routine</h2>
+      <div class="category-grid">
+        <a href="#cardio-exercises" class="category-link">
+          <div class="category-card">
+            <img src="./assets/cardio-workout.jpg" alt="Cardio Workout" />
+            <h3>Cardio Workout</h3>
+            <p>Get your heart pumping with cardio exercises.</p>
+          </div>
+        </a>
+        <a href="#strength-training" class="category-link">
+          <div class="category-card">
+            <img src="./assets/strength-training.jpg" alt="Strength Training" />
+            <h3>Strength Training</h3>
+            <p>Build your muscles with strength exercises.</p>
+          </div>
+        </a>
+        <a href="#flexibility-training" class="category-link">
+          <div class="category-card">
+            <img
+              src="./assets/flexibility.jpeg"
+              alt="Flexibility and Balance"
+            />
+            <h3>Flexibility</h3>
+            <p>Enhance your flexibility with these stretching exercises.</p>
+          </div>
+        </a>
+        <a href="#hiit-training" class="category-link">
+          <div class="category-card">
+            <img
+              src="./assets/hiit.webp"
+              alt="High Intensity Interval Training"
+            />
+            <h3>HIIT</h3>
+            <p>Maximize fat burn and improve fitness with HIIT.</p>
+          </div>
+        </a>
+        <a href="#core-strength-training" class="category-link">
+          <div class="category-card">
+            <img
+              src="./assets/core-strength.webp"
+              alt="Core Strength Training"
+            />
+            <h3>Core Training</h3>
+            <p>Maximize fat burn and improve fitness with HIIT.</p>
+          </div>
+        </a>
+        <a href="#advanced-workout" class="category-link">
+          <div class="category-card">
+            <img src="./assets/advanced-workout.avif" alt="Advanced Workout" />
+            <h3>Advanced Workout</h3>
+            <p>Maximize fat burn and improve fitness with HIIT.</p>
+          </div>
+        </a>
       </div>
-      <!-- Add more exercise categories as needed -->
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="exercise-roadmap">
+      <h2>Your Exercise Journey</h2>
+      <div class="roadmap-container">
+        <!-- Step 1: Cardio Foundations -->
+        <div class="roadmap-step">
+          <div class="roadmap-icon cardio-icon"></div>
+          <div class="roadmap-content">
+            <h3>Stage 1: Cardio Foundations</h3>
+            <p>
+              Begin with low to moderate intensity cardio exercises like brisk
+              walking or cycling. Build endurance and improve cardiovascular
+              health.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2: Flexibility Training -->
+        <div class="roadmap-step">
+          <div class="roadmap-icon flexibility-icon"></div>
+          <div class="roadmap-content">
+            <h3>Stage 2: Flexibility Training</h3>
+            <p>
+              Incorporate flexibility exercises like stretching and yoga to
+              enhance your range of motion and reduce the risk of injury.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3: Strength Training Basics -->
+        <div class="roadmap-step">
+          <div class="roadmap-icon strength-icon"></div>
+          <div class="roadmap-content">
+            <h3>Stage 3: Strength Training Basics</h3>
+            <p>
+              Start with bodyweight exercises like squats, push-ups, and lunges.
+              Build muscle strength and improve body stability.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 4: HIIT -->
+        <div class="roadmap-step">
+          <div class="roadmap-icon hiit-icon"></div>
+          <div class="roadmap-content">
+            <h3>Stage 4: High-Intensity Interval Training (HIIT)</h3>
+            <p>
+              Incorporate HIIT sessions to boost metabolism, burn fat, and
+              increase overall fitness through short bursts of intense exercise.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 5: Core Strength and Stability -->
+        <div class="roadmap-step">
+          <div class="roadmap-icon core-icon"></div>
+          <div class="roadmap-content">
+            <h3>Stage 5: Core Strength and Stability</h3>
+            <p>
+              Focus on core exercises like planks and leg raises to improve
+              posture, balance, and overall strength.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 6: Advanced Workouts -->
+        <div class="roadmap-step">
+          <div class="roadmap-icon advanced-icon"></div>
+          <div class="roadmap-content">
+            <h3>Stage 6: Advanced Workouts</h3>
+            <p>
+              As you progress, incorporate more advanced strength training,
+              heavier weights, and longer HIIT sessions for greater challenges.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workout Videos Section -->
+    <section class="workout-section exercise-roadmap">
+      <h2>Workout Videos</h2>
+      <div class="workout-cards">
+        <div class="card">
+          <iframe
+            width="100%"
+            height="200"
+            src="https://www.youtube.com/embed/M0uO8X3_tEA"
+            title="20 Minute Full Body Cardio HIIT Workout [NO REPEAT]"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="card-text">
+            <h3>20 Minute Full Body Cardio HIIT Workout</h3>
+            <p>
+              A quick and intense full-body cardio workout with no repeats,
+              designed to burn fat and boost endurance!
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <iframe
+            width="100%"
+            height="200"
+            src="https://www.youtube.com/embed/UIPvIYsjfpo"
+            title="30 Min FULL BODY WORKOUT with WARM UP | No Equipment & No Repeat | Rowan Row"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="card-text">
+            <h3>30 Min Full Body Workout with Warm Up</h3>
+            <p>
+              This 30-minute full-body workout includes a warm-up and requires
+              no equipment, ideal for a complete fitness routine.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <iframe
+            width="100%"
+            height="200"
+            src="https://www.youtube.com/embed/IT94xC35u6k"
+            title="20 min Fat Burning Workout for TOTAL BEGINNERS (Achievable, No Equipment)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="card-text">
+            <h3>20 Min Fat Burning Workout for Beginners</h3>
+            <p>
+              An easy-to-follow 20-minute fat-burning workout, perfect for
+              beginners with no equipment needed.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <iframe
+            width="100%"
+            height="200"
+            src="https://www.youtube.com/embed/g_tea8ZNk5A"
+            title="15 Min. Full Body Stretch | Daily Routine for Flexibility, Mobility & Relaxation"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <div class="card-text">
+            <h3>15 Min Full Body Stretch</h3>
+            <p>
+              Relax and improve flexibility with this 15-minute full-body
+              stretch, perfect for daily flexibility and mobility exercises.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="explore-channel">
+        <p>Explore more workout videos on our YouTube channel!</p>
+        <a href="https://www.youtube.com/channel/your-channel" target="_blank"
+          >Visit Our Channel</a
+        >
+      </div>
+    </section>
+
+    <!-- Cardio Exercises -->
+    <section class="cardio-exercises exercise-roadmap" id="cardio-exercises">
+      <h2>Cardio Exercises</h2>
+      <div class="exercise-container">
+        <div class="exercise-card">
+          <img src="./assets/exercise-img/running.cms" alt="Running" />
+          <div class="exercise-info">
+            <h3>Running</h3>
+            <p>Boost your stamina with outdoor or treadmill running.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img
+            src="./assets/exercise-img/jumping-jacks.jpg"
+            alt="Jumping Jacks"
+          />
+          <div class="exercise-info">
+            <h3>Jumping Jacks</h3>
+            <p>Full-body exercise to warm up and increase your heart rate.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img src="./assets/exercise-img/burpees.jpg" alt="Burpees" />
+          <div class="exercise-info">
+            <h3>Burpees</h3>
+            <p>A high-intensity, full-body cardio workout.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img src="./assets/exercise-img/Hihgh-knees.avif" alt="High Knees" />
+          <div class="exercise-info">
+            <h3>High Knees</h3>
+            <p>
+              Running in place with high knee lifts to increase speed and
+              stamina.
+            </p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img src="./assets/exercise-img/jump-rope.jfif" alt="Jump Rope" />
+          <div class="exercise-info">
+            <h3>Jump Rope</h3>
+            <p>
+              An excellent full-body exercise for cardio endurance and
+              coordination.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strength Training Section -->
+    <section class="strength-training exercise-roadmap" id="strength-training">
+      <h2>Strength Training Exercises</h2>
+      <div class="exercise-container">
+        <div class="exercise-card">
+          <img src="./assets/exercise-img/push-ups.jpg" alt="Push Ups" />
+          <div class="exercise-info">
+            <h3>Push Ups</h3>
+            <p>Build upper body strength with this classic exercise.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img src="./assets/exercise-img/squats.jpg" alt="Squats" />
+          <div class="exercise-info">
+            <h3>Squats</h3>
+            <p>Enhance lower body strength and stability.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img src="./assets/exercise-img/deadlifts.jfif" alt="Deadlifts" />
+          <div class="exercise-info">
+            <h3>Deadlifts</h3>
+            <p>Focus on posterior chain strength with deadlifts.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img src="./assets/exercise-img/lunges.webp" alt="Lunges" />
+          <div class="exercise-info">
+            <h3>Lunges</h3>
+            <p>Develop strength and balance in your legs.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img src="./assets/exercise-img/plank.png" alt="Plank" />
+          <div class="exercise-info">
+            <h3>Plank</h3>
+            <p>Core-strengthening exercise for stability and endurance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flexibility Training -->
+    <section
+      class="flexibility-training exercise-roadmap"
+      id="flexibility-training"
+    >
+      <h2>Flexibility Exercises</h2>
+      <div class="exercise-container">
+        <div class="exercise-card">
+          <img
+            src="./assets/exercise-img/hamstring-stretch.avif"
+            alt="Hamstring Stretch"
+          />
+          <div class="exercise-info">
+            <h3>Hamstring Stretch</h3>
+            <p>Improve hamstring flexibility and reduce tightness.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img
+            src="./assets/exercise-img/cobra-stretch.jpg"
+            alt="Cobra Stretch"
+          />
+          <div class="exercise-info">
+            <h3>Cobra Stretch</h3>
+            <p>Enhance spine flexibility and open up the chest.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img
+            src="./assets/exercise-img/quad-stretch.jpg"
+            alt="Quad Stretch"
+          />
+          <div class="exercise-info">
+            <h3>Quad Stretch</h3>
+            <p>Stretch the quadriceps for improved flexibility.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img
+            src="./assets/exercise-img/shoulder-stretch.jpg"
+            alt="Shoulder Stretch"
+          />
+          <div class="exercise-info">
+            <h3>Shoulder Stretch</h3>
+            <p>Loosen up shoulder muscles and improve mobility.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img
+            src="./assets/exercise-img/lower-back-stretch.jpg"
+            alt="Lower Back Stretch"
+          />
+          <div class="exercise-info">
+            <h3>Lower Back Stretch</h3>
+            <p>Relieve tension in the lower back area.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIIT Training -->
+    <section class="hiit-training exercise-roadmap" id="hiit-training">
+      <h2>HIIT Exercises</h2>
+      <div class="exercise-container">
+        <div class="exercise-card">
+          <img src="./assets/exercise-img/jump-squat.jpg" alt="Jump Squats" />
+          <div class="exercise-info">
+            <h3>Jump Squats</h3>
+            <p>Increase power and explosiveness in your legs.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img
+            src="./assets/exercise-img/mountain-climbers.jfif"
+            alt="Mountain Climbers"
+          />
+          <div class="exercise-info">
+            <h3>Mountain Climbers</h3>
+            <p>A fast-paced cardio workout for your core and legs.</p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img
+            src="./assets/exercise-img/plyometrics.jpg"
+            alt="Plyometric Push-Ups"
+          />
+          <div class="exercise-info">
+            <h3>Plyometric Push-Ups</h3>
+            <p>
+              A powerful upper body exercise that builds strength and speed.
+            </p>
+          </div>
+        </div>
+
+        <div class="exercise-card">
+          <img src="./assets/exercise-img/tuck-jump.png" alt="Tuck Jumps" />
+          <div class="exercise-info">
+            <h3>Tuck Jumps</h3>
+            <p>Intensify your HIIT routine with tuck jumps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gym Equipments and Alternatives -->
+    <section class="gym-equipment-alternatives exercise-roadmap">
+      <h2>Gym Equipment and Their Alternatives</h2>
+
+      <!-- Equipment 1: Chairs for Dips -->
+      <div class="equipment-section">
+        <img
+          src="./assets/gym-equipments/dips.jpg"
+          alt="Dip Bar"
+          class="equipment-img left"
+        />
+        <div class="equipment-info">
+          <h2>Chairs for Dips</h2>
+          <p>
+            Dip bars are great for upper body workouts, specifically for your
+            triceps, chest, and shoulders. At home, you can use two sturdy
+            chairs placed parallel to each other for dips.
+          </p>
+        </div>
+        <img
+          src="./assets/gym-equipments/chair.jpg"
+          alt="Chairs for Dips"
+          class="equipment-img right"
+        />
+      </div>
+
+      <!-- Equipment 2: Water Jug as Kettlebells -->
+      <div class="equipment-section">
+        <img
+          src="./assets/gym-equipments/kettlebell.webp"
+          alt="Kettlebell"
+          class="equipment-img left"
+        />
+        <div class="equipment-info">
+          <h2>Water Jug as Kettlebells</h2>
+          <p>
+            Kettlebells are used for dynamic movements and strength training. A
+            large water jug filled with water or sand can work as a home
+            alternative for kettlebell exercises.
+          </p>
+        </div>
+        <img
+          src="./assets/gym-equipments/water-jug.png"
+          alt="Water Jug"
+          class="equipment-img right"
+        />
+      </div>
+
+      <!-- Equipment 3: Basketball or Volleyball as Medicine Ball -->
+      <div class="equipment-section">
+        <img
+          src="./assets/gym-equipments/medicine-ball.jfif"
+          alt="Medicine Ball"
+          class="equipment-img left"
+        />
+        <div class="equipment-info">
+          <h2>Basketball as Medicine Ball</h2>
+          <p>
+            A medicine ball is used for core exercises and dynamic strength
+            training. You can use a basketball or volleyball as a substitute for
+            medicine ball exercises at home.
+          </p>
+        </div>
+        <img
+          src="./assets/gym-equipments/basketball.webp"
+          alt="Basketball"
+          class="equipment-img right"
+        />
+      </div>
+
+      <!-- Equipment 4: Loaded Bag for Bodyweight Exercises -->
+      <div class="equipment-section">
+        <img
+          src="./assets/gym-equipments/weight-vest.webp"
+          alt="Weight Vest"
+          class="equipment-img left"
+        />
+        <div class="equipment-info">
+          <h2>Loaded Bag for Bodyweight Exercises</h2>
+          <p>
+            Weight vests add resistance to bodyweight exercises. A loaded
+            backpack filled with books or heavy objects is a great alternative
+            to a weight vest.
+          </p>
+        </div>
+        <img
+          src="./assets/gym-equipments/backpack.webp"
+          alt="Loaded Backpack"
+          class="equipment-img right"
+        />
+      </div>
+
+      <!-- Equipment 5: Wall for Stretch and Flexibility Exercises -->
+      <div class="equipment-section">
+        <img
+          src="./assets/gym-equipments/stretching.jfif"
+          alt="Stretching Equipment"
+          class="equipment-img left"
+        />
+        <div class="equipment-info">
+          <h2>Wall for Stretching</h2>
+          <p>
+            Stretching bars or equipment help with flexibility. A simple wall
+            can serve as an excellent tool for various stretching exercises to
+            improve flexibility at home.
+          </p>
+        </div>
+        <img
+          src="./assets/gym-equipments/wall.png"
+          alt="Wall for Stretching"
+          class="equipment-img right"
+        />
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>FitZen</h3>
+          <p>
+            Your journey to fitness, balance, and mindfulness begins here. Join
+            us for workouts, yoga, and meditation sessions designed to help you
+            achieve your wellness goals.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../exercises/exercises.html">Exercise</a></li>
+            <li><a href="../yoga/yoga.html">Yoga</a></li>
+            <li><a href="../meditation/meditation.html">Meditation</a></li>
+            <li><a href="../diet/diet.html">Diet</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="footer-email">
+            <h4>Email Us</h4>
+            <p><a href="mailto:info@fitzen.com">info@fitzen.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 FitZen. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Responsive Nav bar -->
+    <div class="mobile-menu" id="mobile-menu">
+      <span class="close-btn" id="close-menu">&times;</span>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../exercises/exercises.html">Exercise</a></li>
+        <li><a href="../yoga/yoga.html">Yoga</a></li>
+        <li><a href="../meditation/meditation.html">Meditation</a></li>
+        <li><a href="../diet/diet.html">Diet</a></li>
+        <li><a href="../products/products.html">Products</a></li>
+      </ul>
     </div>
-  </section>
 
-  <!-- Add more sections as needed -->
-
-  <script src="scripts.js"></script>
-</body>
+    <script src="../js/navbar.js"></script>
+  </body>
 </html>
