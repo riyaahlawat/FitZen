@@ -161,12 +161,13 @@ body {
 }
 
 .calculator-container {
-  background: orange; /* Set background to orange */
-  padding: 20px;
+  background: #e5c1c1; /* Set background to orange */
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: auto; /* Adjust the width as needed */
+  width: 65vw; /* Adjust the width as needed */
   overflow-y: auto; /* Allows scrolling if content overflows */
+  border: 3px solid black;
 }
 
 #calorie-calculator-form {
@@ -188,14 +189,15 @@ body {
 #age-input {
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 4px;
 }
 
 button {
-  background-color: #dc3545; /* Red background for button */
-  color: white;
-  border: none;
+  background-color: #2b4c1b; /* Red background for button */
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
   padding: 10px;
   border-radius: 4px;
   cursor: pointer;
@@ -207,7 +209,7 @@ button:hover {
 
 .calculator-result {
   margin-top: 20px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .roadmap-section {
@@ -221,15 +223,16 @@ button:hover {
   justify-content: space-around;
   flex-wrap: wrap; /* Allow wrapping for responsive design */
   margin-bottom: 30px;
+  padding: 1%;
+  border: 2px solid black;
 }
 
 .roadmap {
   flex: 1; /* Take equal space */
   margin: 0 10px;
   padding: 30px;
-  border: 1px solid #ddd;
+  border: 1px solid #000000;
   border-radius: 8px;
-  background-color: #fff;
   min-width: 280px; /* Minimum width for better responsiveness */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
 }
