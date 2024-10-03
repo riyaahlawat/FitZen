@@ -38,7 +38,7 @@ body {
 
 @media (max-width: 768px) {
   .meditation-header {
-    height: 70vh;
+    /* height: 70vh; */
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 85%);
   }
 }
