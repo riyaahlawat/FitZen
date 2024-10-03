@@ -113,6 +113,10 @@ body {
   object-fit: contain;
 }
 
+.features a {
+  color: rgb(58, 0, 58);
+}
+
 .section.features {
   padding: 50px 20px; /* Padding around the section */
   display: grid;
