@@ -338,12 +338,18 @@ header p {
   justify-content: space-between;
   background-color: #fff;
   padding: 1.5rem;
-  margin: 1rem 4rem;
-  margin-bottom: 2rem;
+  margin: 2rem 4rem;
+  /* margin-bottom: 2rem; */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+}
+
+@media (max-width: 768px ){
+  .equipment-section{
+    margin: 2rem;
+  }
 }
 
 .equipment-section:hover {
@@ -374,6 +380,7 @@ header p {
 .equipment-info h2 {
   padding-top: 0;
   margin-top: 0;
+  margin-bottom: 1.2rem;
 }
 
 .equipment-info p {
