@@ -7,7 +7,7 @@
 body {
   font-family: "Ubuntu", system-ui;
   font-weight: 300;
-  line-height: 1.6;
+  font-style: normal;
 }
 
 .section {
@@ -32,37 +32,41 @@ body {
 
 .hero-image {
   position: relative;
-  height: 80vh;
-  background-image: url("../assets/diet.jpg"); 
-  background-size: cover;
-  background-position: center;
+  height: 75vh;
+  background-color: #da574a;
+  background-image: url("./assets/diet-bg.gif"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
 }
 
 .overlay {
   position: relative;
-  height: 80vh; 
-  background-color: rgba(63, 63, 63, 0.7); 
+  height: 100%; 
+  background-color: rgba(238, 222, 222, 0.6); 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: white; 
+  color: #004d40;
 }
 
 .overlay h1 {
-  border: 1px solid rgb(90, 255, 109);
+  /* border: 1px solid rgb(90, 255, 109); */
+  align-items: center;
+  color: #004d40;
+  font-size: 2.5rem;
+  margin-top: 2rem;
 }
 
-.bordered-text {
-  padding: 10px; 
-  margin: 10px; 
-  display: inline-block; 
-  text-align: center; 
+.overlay > p{
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 .diet-purpose-section {
-  background-color: #4caf50; /* Green background */
-  color: white; /* White text for contrast */
+  /* background-color: #4caf50;  */
+  /* color: white;  */
   padding: 20px; /* Padding for spacing */
   border-radius: 8px; /* Rounded corners */
   margin: 20px auto; /* Centered with margin */
