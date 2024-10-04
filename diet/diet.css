@@ -39,7 +39,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   text-align: center;
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
 }
 
 .overlay {
@@ -99,9 +99,6 @@ body {
   justify-content: center; /* Center content vertically */
   align-items: center; /* Center content horizontally */
 }
-
-
-
 
 .nutrients-section h2 {
   font-size: 2rem;
