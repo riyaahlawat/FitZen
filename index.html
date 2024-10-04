@@ -16,6 +16,20 @@
     />
     <link rel="stylesheet" href="./style-home.css" />
     <link rel="stylesheet" href="./style-nav-footer.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1DZ2FHK1JE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-1DZ2FHK1JE");
+    </script>
   </head>
 
   <body>
@@ -162,26 +176,32 @@
       <h2>Explore Our Unique Features</h2>
       <div class="usp-container">
         <div class="usp-card">
-          <img src="./assets/calculator.png" alt="Diet Calculator Icon">
+          <img src="./assets/calculator.png" alt="Diet Calculator Icon" />
           <h3>Functional Diet Calculator</h3>
-          <p><a href="./diet/diet.html">Explore your personalized diet plan!</a></p>
+          <p>
+            <a href="./diet/diet.html">Explore your personalized diet plan!</a>
+          </p>
         </div>
         <div class="usp-card">
-          <img src="./assets/meds.avif" alt="Meditation Icon">
+          <img src="./assets/meds.avif" alt="Meditation Icon" />
           <h3>Functional Meditation</h3>
-          <p><a href="./meditation/meditation.html">Discover soothing meditation tones!</a></p>
+          <p>
+            <a href="./meditation/meditation.html"
+              >Discover soothing meditation tones!</a
+            >
+          </p>
         </div>
         <div class="usp-card">
-          <img src="./assets/surya.avif" alt="Morning Yoga Icon">
+          <img src="./assets/surya.avif" alt="Morning Yoga Icon" />
           <h3>Functional Morning Yoga</h3>
-          <p><a href="./yoga/morning-yoga.html">Start your day with Surya Namaskar!</a></p>
+          <p>
+            <a href="./yoga/morning-yoga.html"
+              >Start your day with Surya Namaskar!</a
+            >
+          </p>
         </div>
       </div>
     </div>
-    
-    
-    
-    
 
     <!-- experts -->
     <div class="section experts-section">
@@ -409,6 +429,12 @@
       </ul>
     </div>
 
+    <!-- Scroll to Top Button -->
+    <div id="scrollTopBtn" onclick="scrollToTop()">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script src="./js/go-to-top.js"></script>
     <script src="./js/packages.js"></script>
     <script src="./js/experts.js"></script>
     <script src="./js/ytvideo.js"></script>

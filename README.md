@@ -65,7 +65,9 @@ Feel free to contribute to **FitZen**! You can fork the repository, make changes
 To get started with **FitZen**, clone the repository and install the required dependencies. 
 
 ```bash
-git clone https://github.com/riyaahlawat/FitZen.git
+
+git clone https://github.com/PayalNarwal/FitZen.git
+
 cd FitZen
 ```
 
