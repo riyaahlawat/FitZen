@@ -48,6 +48,32 @@ hr {
   }
 }
 
+.meditation-purpose-section {
+  padding: 20px; /* Padding for spacing */
+  margin: 20px auto; /* Centered with margin */
+  max-width: 800px; /* Maximum width for readability */
+  text-align: justify; 
+  margin-top: -30px;
+}
+
+@media (max-width: 768px) {
+  .meditation-purpose-section {
+    margin: 20px;
+  }
+}
+
+.meditation-purpose-section h2 {
+  font-size: 28px; /* Size of the heading */
+  margin-bottom: 15px; /* Space below the heading */
+  text-align: center; /* Center the heading */
+}
+
+.meditation-purpose-section p {
+  font-size: 18px; /* Font size for the paragraph */
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+
 .meditation-content {
   position: relative;
   z-index: 1;
