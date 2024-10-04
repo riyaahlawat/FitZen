@@ -10,6 +10,10 @@ body {
   font-style: normal;
 }
 
+hr {
+  margin: 2rem 0;
+}
+
 /* Yoga Header Section */
 .yoga-header {
   text-align: center;
@@ -21,6 +25,7 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  border-bottom: 2px solid black;
 }
 
 @media (max-width: 768px) {
@@ -78,7 +83,7 @@ body {
 .yoga-card {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(10, 10, 10, 0.5);
   padding: 1.5rem;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -108,7 +113,7 @@ body {
 /* Hover Effect for the Card */
 .yoga-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.5);
 }
 
 /* Responsive Design */
@@ -120,7 +125,7 @@ body {
 
 /* Yoga Roadmap Section */
 .yoga-roadmap {
-  background-color: #f3f4f6;
+  /* background-color: #f3f4f6; */
   padding: 3rem 1rem;
   text-align: center;
 }
@@ -146,7 +151,7 @@ body {
   background-color: #fff;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(10, 10, 10, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 80%;
 }
@@ -194,7 +199,7 @@ body {
 /* Hover Effects */
 .roadmap-step:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.5);
 }
 
 /* Responsive Design */
@@ -214,7 +219,7 @@ body {
 .yoga-poses {
   text-align: center;
   padding: 2rem;
-  background-color: #f0f4f8;
+  /* background-color: #f0f4f8; */
 }
 
 .yoga-poses h2 {
@@ -236,7 +241,7 @@ body {
 .yoga-pose-card {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(10, 10, 10, 0.5);
   padding: 1.5rem;
   display: flex;
   align-items: center;
@@ -268,7 +273,7 @@ body {
 
 .yoga-pose-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.5);
 }
 
 /* Responsive Layout */
@@ -447,7 +452,7 @@ body {
 
 .yoga-benefits {
     padding: 50px 20px; /* Padding around the section */
-    background: #f9f9f9; /* Light background color */
+    /* background: #f9f9f9; Light background color */
     text-align: center; /* Center the text */
 }
 
@@ -469,7 +474,7 @@ body {
     background-color: white; /* Card background color */
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Inner padding */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.5); /* Light shadow effect */
     transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
@@ -480,3 +485,63 @@ body {
 .benefit-item:hover {
     transform: translateY(-5px); /* Lift effect on hover */
 }
+
+/* faq-section */
+.faq-section {
+  margin: 0 10%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-question {
+  width: 100%;
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background-color: #ddd;
+}
+
+.faq-answer {
+  display: none;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
