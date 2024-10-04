@@ -25,7 +25,7 @@ hr {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
 }
 
 @media (max-width: 768px) {
@@ -44,6 +44,35 @@ hr {
 .yoga-header p {
   font-size: 1.2rem;
 }
+
+
+.yoga-purpose-section {
+  /* Similar structure as diet-purpose-section */
+  padding: 20px; /* Padding for spacing */
+  border-radius: 8px; /* Rounded corners */
+
+  margin: 20px auto; /* Centered with margin */
+  max-width: 800px; /* Maximum width for readability */
+  text-align: justify; /* Centered text */
+}
+
+@media (max-width: 768px) {
+  .yoga-purpose-section {
+    margin: 20px;
+  }
+}
+
+.yoga-purpose-section h2 {
+  font-size: 28px; /* Size of the heading */
+  margin-bottom: 15px; /* Space below the heading */
+  text-align: center; /* Center the heading */
+}
+
+.yoga-purpose-section p {
+  font-size: 18px; /* Font size for the paragraph */
+  line-height: 1.6; /* Increased line height for readability */
+}
+
 
 /* Yoga Categories Grid */
 .yoga-categories {
