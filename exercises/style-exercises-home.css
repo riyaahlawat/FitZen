@@ -25,9 +25,9 @@ header {
   height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 80vh;
+  background-size: 90vh;
   position: relative;
-  border-bottom: 2px solid #333;
+  /* border-bottom: 2px solid #333; */
 }
 
 .header-content::after {
@@ -48,6 +48,33 @@ header h1 {
 
 header p {
   font-size: 1.2rem;
+}
+
+.exercise-purpose-section {
+  /* Similar structure as diet-purpose-section */
+  padding: 20px; /* Padding for spacing */
+  border-radius: 8px; /* Rounded corners */
+
+  margin: 20px auto; /* Centered with margin */
+  max-width: 800px; /* Maximum width for readability */
+  text-align: justify; /* Centered text */
+}
+
+@media (max-width: 768px) {
+  .exercise-purpose-section {
+    margin: 20px;
+  }
+}
+
+.exercise-purpose-section h2 {
+  font-size: 28px; /* Size of the heading */
+  margin-bottom: 15px; /* Space below the heading */
+  text-align: center; /* Center the heading */
+}
+
+.exercise-purpose-section p {
+  font-size: 18px; /* Font size for the paragraph */
+  line-height: 1.6; /* Increased line height for readability */
 }
 
 /* Exercise Categories Section */
@@ -410,15 +437,9 @@ header p {
 
 /* faq-section */
 .faq-section {
-  padding: 5%;
-  text-align: center;
   margin: 0 10%;
   /* padding: 2rem; */
   margin-bottom: 2rem;
-}
-
-.faq-section h2 {
-  padding-bottom: 1rem;
 }
 
 .faq-container {
@@ -468,3 +489,22 @@ header p {
   transform: rotate(45deg);
 }
 
+.section {
+  padding: 50px 0px;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
