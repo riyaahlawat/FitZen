@@ -4,7 +4,7 @@
 **FitZen** is a comprehensive fitness web app designed to guide users through exercises, yoga, meditation, diet planning, and wellness products. Whether you're a fitness enthusiast or just beginning your journey, FitZen offers everything you need to stay healthy and fit. The web app is designed to work across different devices, ensuring a seamless experience whether on mobile or desktop.
 
 ## Explore here:
-https://payalnarwal.github.io/FitZen/
+riyaahlawat.github.io/FitZen/
 
 
 ## Table of Contents
@@ -28,7 +28,7 @@ FitZen is designed to be your personal fitness guide, offering a wide range of f
 
 ## Features
 
-- **Exercises**: A variety of exercise routines categorized for all fitness levels.
+- **Exercise**: A variety of exercise routines categorized for all fitness levels.
 - **Yoga**: Guided yoga sessions including beginner, intermediate, and advanced levels, as well as themed yoga routines like Morning Yoga and Evening Yoga.
 - **Meditation**: Calming meditation tracks with animated ripple effects to enhance the relaxation experience.
 - **Diet**: Nutritional guidance to create balanced meals that suit your lifestyle and goals.
@@ -37,8 +37,8 @@ FitZen is designed to be your personal fitness guide, offering a wide range of f
 
 ## Usage
 
-### Exercises
-The **Exercises** section includes a variety of fitness routines like cardio, strength training, and flexibility workouts. Browse different categories and choose the workout that best suits your fitness level and goals.
+### Exercise
+The **Exercise** section includes a variety of fitness routines like cardio, strength training, and flexibility workouts. Browse different categories and choose the workout that best suits your fitness level and goals.
 
 ### Yoga
 The **Yoga** section features a wide range of yoga poses and sequences. Categories include:
@@ -65,7 +65,7 @@ Feel free to contribute to **FitZen**! You can fork the repository, make changes
 To get started with **FitZen**, clone the repository and install the required dependencies. 
 
 ```bash
-git clone https://github.com/yourusername/FitZen.git
+git clone https://github.com/riyaahlawat/FitZen.git
 cd FitZen
 ```
 
