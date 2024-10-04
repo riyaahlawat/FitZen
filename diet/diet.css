@@ -129,8 +129,8 @@ body {
 
 
 .nutrient-image {
-  width: 20%; /* Image width */
-  height: auto; /* Image height */
+  width: 20%; 
+  height: auto;
   margin-right: 20px; /* Space between image and text */
   object-fit: cover;
   border-radius: 8px;

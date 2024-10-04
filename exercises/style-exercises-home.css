@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -6,8 +8,6 @@ body {
   font-family: "Ubuntu", system-ui;
   font-weight: 300;
   font-style: normal;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   background-color: #f4f4f4;
 }
@@ -16,13 +16,25 @@ body {
 header {
   text-align: center;
   background-color: #fff;
-  color: black;
+  color: #004d40;
   padding: 2rem 0;
   background-image: url(./assets/exercise-gif.gif);
-  height: 60vh;
+  height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80vh;
+  position: relative;
+}
+
+.header-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* height: 70vh; */
+  background-color: rgba(40, 210, 71, 0.1);
 }
 
 header h1 {

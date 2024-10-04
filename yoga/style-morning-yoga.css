@@ -21,18 +21,17 @@ body {
   text-align: center;
 }
 
-
 .hero-content {
   /* margin: 20px; */
   position: relative;
-    height: 100%; 
-    width: 100vw;
-    background-color: rgba(63, 63, 63, 0.7); 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white; 
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(63, 63, 63, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .hero-content h1 {
