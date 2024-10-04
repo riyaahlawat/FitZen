@@ -439,3 +439,95 @@ body {
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
 }
+
+/* USP Section */
+.usp-section {
+  margin-left: 10%;
+  margin-right: 10%;
+  /* padding: 60px; */
+  /* background-color: #f0f0f0; */
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.usp-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Flexbox Layout for USP Cards */
+.usp-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* USP Cards */
+.usp-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(10, 10, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  width: 280px; /* Fix width for cards */
+}
+
+.usp-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 24px rgba(10, 10, 10, 0.5);
+}
+
+/* Images - Larger Size */
+.usp-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #010101;
+}
+
+/* Heading - Bold and Bigger */
+.usp-card h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* Text - Shorter */
+.usp-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Links */
+.usp-card a {
+  color: #690023;
+  /* text-decoration: none; */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.usp-card a:hover {
+  text-decoration: underline;
+}
+
+/* Adding colors to each card */
+.usp-card:nth-child(1) {
+  background-color: #e0f7fa;
+}
+
+.usp-card:nth-child(2) {
+  background-color: #e0f7fa;
+}
+
+.usp-card:nth-child(3) {
+  background-color: #e0f7fa;
+}
