@@ -39,6 +39,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom;
   text-align: center;
+  border-bottom: 2px solid black;
 }
 
 .overlay {

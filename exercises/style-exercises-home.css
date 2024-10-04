@@ -9,9 +9,12 @@ body {
   font-weight: 300;
   font-style: normal;
   box-sizing: border-box;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
 }
 
+hr {
+  margin: 2rem 0;
+}
 /* Header Section */
 header {
   text-align: center;
@@ -24,6 +27,7 @@ header {
   background-repeat: no-repeat;
   background-size: 80vh;
   position: relative;
+  border-bottom: 2px solid #333;
 }
 
 .header-content::after {
@@ -75,7 +79,7 @@ header p {
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(10, 10, 10, 0.5);
   text-align: center;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -101,7 +105,7 @@ header p {
 
 .category-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -112,7 +116,7 @@ header p {
 
 /* Exercise Roadmap Section */
 .exercise-roadmap {
-  background-color: rgb(217, 225, 228);
+  /* background-color: rgb(217, 225, 228); */
   padding: 1.5rem 1rem;
   text-align: center;
 }
@@ -136,7 +140,7 @@ header p {
   background-color: #fff;
   border-radius: 12px;
   padding: 1rem 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(10, 10, 10, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 80%;
 }
@@ -183,7 +187,7 @@ header p {
 
 .roadmap-step:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -201,7 +205,7 @@ header p {
 .workout-section {
   margin: 0 auto;
   padding: 20px 0;
-  background-color: rgb(217, 225, 228);
+  /* background-color: rgb(217, 225, 228); */
   text-align: center;
 }
 
@@ -215,7 +219,7 @@ header p {
 .card {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(10, 10, 10, 0.5);
   overflow: hidden;
   width: 250px;
 }
@@ -272,7 +276,7 @@ header p {
 .exercise-card {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(10, 10, 10, 0.5);
   padding: 1.5rem;
   display: flex;
   align-items: center;
@@ -303,7 +307,7 @@ header p {
 
 .exercise-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -341,7 +345,7 @@ header p {
   margin: 2rem 4rem;
   /* margin-bottom: 2rem; */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(10, 10, 10, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -354,7 +358,7 @@ header p {
 
 .equipment-section:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(10, 10, 10, 0.5);
 }
 
 .equipment-img {
@@ -403,3 +407,64 @@ header p {
     margin-bottom: 1rem;
   }
 }
+
+/* faq-section */
+.faq-section {
+  padding: 5%;
+  text-align: center;
+  margin: 0 10%;
+  /* padding: 2rem; */
+  margin-bottom: 2rem;
+}
+
+.faq-section h2 {
+  padding-bottom: 1rem;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-question {
+  width: 100%;
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background-color: #ddd;
+}
+
+.faq-answer {
+  display: none;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-top: 1px solid #ccc;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+

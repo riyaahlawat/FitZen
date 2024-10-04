@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FitZen - Yoga</title>
+    <title>FitZen - Meditation</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
@@ -45,6 +45,8 @@
       </div>
     </div>
 
+    <hr>
+
     <div class="meditation-page">
       <!-- Meditation Section with Animation Controls -->
       <div class="meditation-controls">
@@ -62,7 +64,7 @@
 
       <!-- Meditation Music Cards -->
       <div class="music-cards-section">
-        <h2>Choose Your Meditation Music</h2>
+        <h2>Discover Your Meditation Tunes 🎼🌿</h2>
         <div class="music-cards">
           <div class="music-card" onclick="playMusic('calm.mp3', '#6A89CC')">
             <img src="./assets/music-calm.jpg" alt="Calm Music" />
@@ -81,6 +83,92 @@
 
       <!-- Hidden Audio Player -->
       <audio id="meditation-audio"></audio>
+    </div>
+
+    <hr>
+
+    <!-- FAQ Section -->
+    <div class="section faq-section" id="faq">
+      <h2>FAQs ❓</h2>
+
+      <div class="faq-container">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            What kind of fitness plans does FitZen offer?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              FitZen offers a variety of personalized fitness plans, including
+              home workouts, gym-based plans, and outdoor exercises, to cater to
+              all levels of fitness. Whether you're a beginner or a seasoned
+              athlete, we have something for everyone!
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            Are the yoga and meditation sessions suitable for beginners?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, our yoga and meditation sessions are designed for all levels,
+              from beginners to advanced practitioners. You can start with the
+              basics and gradually progress at your own pace.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            How do I join the FitZen community on Discord?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              To join our Discord community, simply click on the 'Join Our
+              Discord Community' button in the "Find and Connect" section above.
+              You'll be able to meet fellow fitness enthusiasts and join group
+              workout sessions.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            Do I need to purchase any equipment for the workouts?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              While some workouts may require basic equipment like dumbbells or
+              resistance bands, we also offer a wide range of equipment-free
+              exercises that can be done anywhere.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I try a fitness plan before committing to it?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Absolutely! We offer a trial period for all our fitness plans, so
+              you can experience the benefits of FitZen before making a full
+              commitment.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="mobile-menu" id="mobile-menu">
@@ -153,5 +241,7 @@
       });
     </script>
     <script src="./script-meditation-home.js"></script>
+    <script src="../js/faq.js"></script>
+
   </body>
 </html>
