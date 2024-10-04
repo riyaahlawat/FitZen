@@ -34,7 +34,7 @@ body {
   position: relative;
   height: 80vh;
   background-image: url("../assets/diet.jpg"); 
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
@@ -70,6 +70,11 @@ body {
   text-align: justify; /* Centered text */
 }
 
+@media (max-width: 768px) {
+  .diet-purpose-section{
+    margin: 20px;
+  }
+}
 .diet-purpose-section h2 {
   font-size: 28px; /* Size of the heading */
   margin-bottom: 15px; /* Space below the heading */
@@ -89,6 +94,9 @@ body {
   justify-content: center; /* Center content vertically */
   align-items: center; /* Center content horizontally */
 }
+
+
+
 
 .nutrients-section h2 {
   font-size: 2rem;
@@ -113,16 +121,32 @@ body {
   align-items: center; /* Align items in the center vertically */
 }
 
+
 .nutrient-info {
   display: flex;
   align-items: center; /* Center image and text vertically */
 }
 
+
 .nutrient-image {
   width: 20%; /* Image width */
   height: auto; /* Image height */
   margin-right: 20px; /* Space between image and text */
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .nutrient-info{
+    flex-direction: column-reverse;
+  }
+  .nutrient-image{
+    width: 200px;
+    height: 132px;
+    margin-right: 0;
+    margin-top: 10px;
+  }
 }
 
 .nutrient-text {
@@ -168,6 +192,13 @@ body {
   width: 65vw; /* Adjust the width as needed */
   overflow-y: auto; /* Allows scrolling if content overflows */
   border: 3px solid black;
+}
+
+@media (max-width: 768px) {
+  .calculator-container{
+    padding: 20px;
+    width: 80vw;
+  }
 }
 
 #calorie-calculator-form {
