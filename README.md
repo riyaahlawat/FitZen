@@ -4,7 +4,7 @@
 **FitZen** is a comprehensive fitness web app designed to guide users through exercises, yoga, meditation, diet planning, and wellness products. Whether you're a fitness enthusiast or just beginning your journey, FitZen offers everything you need to stay healthy and fit. The web app is designed to work across different devices, ensuring a seamless experience whether on mobile or desktop.
 
 ## Explore here:
-[payalnarwal.github.io/FitZen/](https://payalnarwal.github.io/FitZen/)
+[riyaahlawat.github.io/FitZen/](https://riyaahlawat.github.io/FitZen/)
 
 
 ## Table of Contents
@@ -66,7 +66,7 @@ To get started with **FitZen**, clone the repository and install the required de
 
 ```bash
 
-git clone https://github.com/PayalNarwal/FitZen.git
+git clone https://github.com/riyaahlawat/FitZen.git
 
 cd FitZen
 ```
@@ -75,6 +75,6 @@ cd FitZen
 
 FitZen is developed by the successful contributions by:
 
-- **Payal Narwal**
 - **Riya Ahlawat**
+- **Payal Narwal**
 - **Samriddhi Tiwari**
