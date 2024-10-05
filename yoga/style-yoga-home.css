@@ -313,6 +313,18 @@ hr {
   }
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .yoga-info h3 {
+    font-size: 1rem;
+  }
+  
+  .yoga-info p {
+    font-size: 0.7rem;
+  }
+}
+
+
 @media (max-width: 480px) {
   .yoga-pose-card {
     flex: 1 1 100%; /* 1 card per row for small screens */
