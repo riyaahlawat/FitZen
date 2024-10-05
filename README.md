@@ -4,7 +4,7 @@
 **FitZen** is a comprehensive fitness web app designed to guide users through exercises, yoga, meditation, diet planning, and wellness products. Whether you're a fitness enthusiast or just beginning your journey, FitZen offers everything you need to stay healthy and fit. The web app is designed to work across different devices, ensuring a seamless experience whether on mobile or desktop.
 
 ## Explore here:
-riyaahlawat.github.io/FitZen/
+[payalnarwal.github.io/FitZen/](https://payalnarwal.github.io/FitZen/)
 
 
 ## Table of Contents
